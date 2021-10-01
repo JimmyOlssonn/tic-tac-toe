@@ -1,0 +1,19 @@
+
+.info{
+    padding: 20px;
+}
+.cell{
+    width: 200px;
+    height: 200px;
+    background-color: #e6e6e6;
+    border-radius: 15%;
+    font-size: 150px;
+    line-height: 190px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.cell p{
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
