@@ -182,9 +182,11 @@ function cellClick(clicked) { // Player clicks on cell
         computerPlay();
     }
 }
+function startUp() {
+    // Event listeners for cells and restart-button
+    document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', cellClick));
+    document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('mouseover', cellMouseover));
+    document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('mouseout', cellMouseout));
+    document.getElementById("restart").addEventListener('click', restartGame);
+}
 
-// Event listeners for cells and restart-button
-document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', cellClick));
-document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('mouseover', cellMouseover));
-document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('mouseout', cellMouseout));
-document.getElementById("restart").addEventListener('click', restartGame);
