@@ -2,6 +2,37 @@ body {
     font-family: Verdana, sans-serif;
 }
 
+h2{
+    font-size: 36px;
+    margin: 1rem;
+}
+
+button{
+    padding: 14px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    box-shadow: rgb(0 0 0 / 30%) 0px 3px 8px;
+}
+
+.success{
+    background-color: #99ff99;
+}
+
+.lost{
+    background-color: #ff8080;
+}
+
+.draw{
+    background-color: #ffff66;
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
 .info {
     padding: 20px;
     text-align: center;
@@ -16,10 +47,6 @@ body {
     line-height: 190px;
     cursor: pointer;
     font-weight: bold;
-}
-
-.cell:not(:last-child) {
-    /* margin-right: 1rem; */
 }
 
 .cell p {

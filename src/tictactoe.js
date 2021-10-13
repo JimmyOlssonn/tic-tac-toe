@@ -33,19 +33,19 @@ function restartGame() { // When game is restarted, change back text, cells and 
 function playerWin() { // The player win
     titel.innerHTML = "Du har vunnit!";
     text.innerHTML = "Klicka på knappen för att starta om spelet";
-    restart.className = "btn btn-success";
+    restart.className = "success";
 }
 
 function computerWin() { // The computer win
     titel.innerHTML = "Du har förlorat!";
     text.innerHTML = "Klicka på knappen för att starta om spelet";
-    restart.className = "btn btn-danger";
+    restart.className = "lost";
 }
 
 function draw() { // Draw
     titel.innerHTML = "Det blev lika";
     text.innerHTML = "Klicka på knappen för att starta om spelet";
-    restart.className = "btn btn-warning";
+    restart.className = "draw";
 }
 
 function checkResult() { // Check if any win condition is 
