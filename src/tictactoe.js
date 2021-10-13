@@ -1,8 +1,8 @@
 var gameStatus = ["", "", "", "", "", "", "", "", ""]; // The gamestatus, X and O are added by the player / computer
 var gameActive = true; // If true the game is active
-var titel = document.getElementById("titel");
-var text = document.getElementById("text");
-var restart = document.getElementById("restart")
+var titel;
+var text;
+var restart;
 
 const winner = [ // All win conditions
     [0, 1, 2],
@@ -188,5 +188,9 @@ function startUp() {
     document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('mouseover', cellMouseover));
     document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('mouseout', cellMouseout));
     document.getElementById("restart").addEventListener('click', restartGame);
+
+    titel = document.getElementById("titel");
+    text = document.getElementById("text");
+    restart = document.getElementById("restart");
 }
 
